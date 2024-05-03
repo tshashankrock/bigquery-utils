@@ -350,20 +350,20 @@ Running the `run_anti_pattern_tool.sh` bash script will build and run the Anti-P
 
 ### Examples of querying script results
 
-* Top 100 queries with the highest bytes processed
+* Top 100 queries with the highest bytes processed in the project
 
   ```sql
   SELECT *
-  FROM optimization_workshop.queries_grouped_by_hash
+  FROM optimization_workshop.queries_grouped_by_hash_project
   ORDER BY total_gigabytes_processed DESC
   LIMIT 100
   ```
 
-* Top 100 recurring queries with the highest slot hours consumed
+* Top 100 recurring queries with the highest slot hours consumed in the project
 
   ```sql
   SELECT *
-  FROM optimization_workshop.queries_grouped_by_hash
+  FROM optimization_workshop.queries_grouped_by_hash_project
   ORDER BY total_slot_hours * days_active * job_count DESC 
   LIMIT 100
   ```
