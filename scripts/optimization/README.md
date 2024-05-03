@@ -324,7 +324,7 @@ These table groups queries by their normalized query
 pattern, which ignores
 comments, parameter values, UDFs, and literals in the query text at project/org level depending upon the query run.
 This allows us to group queries that are logically the same, but
-have different literals. The `queries_grouped_by_hash` table does not expose the
+have different literals. The `queries_grouped_by_hash_project/queries_grouped_by_hash_org` table does not expose the
 raw SQL text of the queries.
 
 The [viewable_queries_grouped_by_hash.sql](viewable_queries_grouped_by_hash.sql)
