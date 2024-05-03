@@ -58,7 +58,7 @@ for all your projects.
     ```sql
     SELECT *
     FROM optimization_workshop.daily_project_analysis
-    ORDER BY total_slot_ms DESC
+    ORDER BY total_slot_hours DESC
     LIMIT 100
     ```
 
