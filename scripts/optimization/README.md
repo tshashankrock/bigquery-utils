@@ -312,11 +312,15 @@ contains views with JOINs where the JOIN condition is potentially non-optimal.
 
 ## Queries grouped by hash
 
-The [queries_grouped_by_hash.sql](queries_grouped_by_hash.sql) script creates a
+The [queries_grouped_by_hash_project.sql](queries_grouped_by_hash_project.sql) script creates a
 table named,
-`queries_grouped_by_hash`. This table groups queries by their normalized query
+`queries_grouped_by_hash_project`.
+The [queries_grouped_by_hash_org.sql](queries_grouped_by_hash_org.sql) script creates a
+table named,
+`queries_grouped_by_hash_org`.
+These table groups queries by their normalized query
 pattern, which ignores
-comments, parameter values, UDFs, and literals in the query text.
+comments, parameter values, UDFs, and literals in the query text at project/org level depending upon the query run.
 This allows us to group queries that are logically the same, but
 have different literals. The `queries_grouped_by_hash` table does not expose the
 raw SQL text of the queries.
