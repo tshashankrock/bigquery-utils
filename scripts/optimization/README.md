@@ -315,9 +315,11 @@ contains views with JOINs where the JOIN condition is potentially non-optimal.
 The [queries_grouped_by_hash_project.sql](queries_grouped_by_hash_project.sql) script creates a
 table named,
 `queries_grouped_by_hash_project`.
+
 The [queries_grouped_by_hash_org.sql](queries_grouped_by_hash_org.sql) script creates a
 table named,
 `queries_grouped_by_hash_org`.
+
 These table groups queries by their normalized query
 pattern, which ignores
 comments, parameter values, UDFs, and literals in the query text at project/org level depending upon the query run.
